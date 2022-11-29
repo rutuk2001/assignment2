@@ -1,0 +1,170 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(250, 246, 246);
+}
+
+img {
+    height: 600px;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.text_box {
+    position: absolute;
+    padding: 50px;
+    top: 40px;
+    left: 90px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+
+.btn {
+    padding: 10PX;
+    color: white;
+    background-color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: dodgerblue;
+    padding: 30px 20px;
+}
+
+.fa-plane {
+    transform: rotate(-45deg);
+}
+
+.fa-sync-alt {
+    transform: rotate(-90deg);
+}
+
+.card {
+    margin-bottom: 15px;
+    border: none;
+    text-align: center;
+}
+
+.card h6 {
+    font-size: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    color: red;
+}
+
+.card-img {
+    height: 150px;
+}
+
+.fa-star {
+    font-size: 12px;
+    padding-right: 2px;
+    color: rgb(251, 238, 43);
+}
+
+#media-section .media img {
+    height: 500px;
+}
+
+#card-media .media img {
+    height: 150px;
+    border: 1px solid rgb(235, 234, 234);
+}
+
+#footer {
+    background-image: url("Image/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+#footer .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.overlay {
+    background-color: black;
+    flex: 1;
+}
+
+#footer p {
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.btn-group-lg button {
+    width: 20%;
+    margin-right: -5px;
+}
+
+.btn-group-lg .btn {
+    font-size: 15px;
+}
+
+.ftrimg {
+    width: 50px;
+    height: 40px;
+    padding: 2px;
+}
+
+@media screen and (max-width:600px) {
+    .header {
+        width: 75%;
+    }
+    .card-img {
+        width: 75%;
+        height: 250px;
+        margin: 0 auto;
+    }
+    #card-media .media img {
+        height: 140px;
+    }
+    #media-section h2 {
+        font-size: 12px;
+    }
+    #media-section h3 {
+        font-size: 15px;
+    }
+    #media-section .dots {
+        display: none;
+    }
+    #media-section span {
+        font-size: 8px;
+    }
+    #media-section .badge h4 {
+        font-size: 15px;
+        padding: 4px;
+    }
+    #media-section img {
+        display: none;
+    }
+    .btn-group-lg .btn {
+        font-size: 10px;
+    }
+    #footer p {
+        font-size: 12px;
+    }
+    #footer .btn {
+        font-size: 7px;
+    }
+}

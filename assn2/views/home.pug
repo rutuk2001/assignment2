@@ -1,0 +1,472 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Shopping Webpage
+  link(rel='stylesheet' href='static/style1.css')
+  // CSS only
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous')
+  // CDN
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+.container-fluid
+  // header
+  header.header
+    nav.navbar.navbar-expand
+      .container
+        img(src='static/images/bkp.png' alt='bpk_logo' style='height: 50px; width:200px ')
+        #navbarNavAltMarkup.collapse.navbar-collapse.justify-content(style='padding-left: 100px;')
+          .navbar-nav
+            a.nav-link(aria-current='page' href='/' target="_blank") HOME 
+            a.nav-link(href='/gallary') GALLARY
+            a.nav-link(href='/aboutus') ABOUT US
+            a.nav-link(href='/services') SERVICES
+            a.nav-link(href='/contact_details') CONTACT-DETAILS
+            a.nav-link(href='/contactus') CONTACT US
+          .icon_1.justify-content-end(style='word-spacing: 20px; padding-left: 100px;')
+            svg.bi.bi-search(xmlns='http://www.w3.org/2000/svg' width='19' height='20' fill='currentColor' viewbox='0 0 16 16')
+              path(d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z')
+            svg.bi.bi-cart-check-fill(xmlns='http://www.w3.org/2000/svg' width='19' height='20' fill='currentColor' viewbox='0 0 16 16')
+              path(d='M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z')
+            svg.bi.bi-archive-fill(xmlns='http://www.w3.org/2000/svg' width='19' height='20' fill='currentColor' viewbox='0 0 16 16')
+              path(d='M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z')
+    // Header Carousel
+    #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='static/images/home.jpg' alt='...')
+        .carousel-item
+          img.d-block.w-100(src='static/images/headimg.jpeg' alt='...')
+        .carousel-item
+          img.d-block.w-100(src='static/images/headimg.jpeg' alt='...')
+        .text_box
+          h1(style='font-size: 60px;')
+            b
+              | The World 
+              br
+              | Of Extreme Sports
+          h4(style=' border-bottom: 3px solid black;')
+            | SAVE 
+            span(style='color: rgb(244, 7, 7);')
+              b 20%
+            |  ON ALL APPAREL
+          br
+          button.btn.btn-dark(type='button') SHOP NOW
+      .my-3.row
+        .col-lg-4.col-md-6.mb-2
+          button.btn.btn-primary.w-100.p-3.rounded-0
+            i.fa.fa-plane
+            |  FREE SHIPPING WORLDWIDE
+        .col-lg-4.col-md-6.mb-2
+          button.btn.btn-danger.w-100.p-3.rounded-0
+            i.fas.fa-sync-alt
+            |  100% MONEY BACK - 48 HOURS
+        .col-lg-4.col-md-6.mb-2
+          button.btn.btn-warning.w-100.p-3.text-white.rounded-0
+            i.far.fa-life-ring
+            |  24/7 ONLINE CUSTOMER SUPPORT
+      section
+        h5.text-center(style='letter-spacing: 1px;')
+          br
+          | FEATURED COLLECTIONS
+        hr
+        br
+        .row
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+        .row
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/prod3.jpg')
+              .card-body
+                h6.card-title BPK BEST PRODUCT
+                p.card-text
+                  | $550.00
+      section#media-section
+        .media.bg-white.my-4
+          img.w-60(src='static/images/dress.jpg' style='padding-left: 100px;')
+          .media-body.p-4
+            small.font-weight-bold HOT DEALS
+            .dots(style='font-size: 30px;')
+              span.font-weight-bold.text-info . 
+              span.font-weight-bold.text-danger . 
+              span.font-weight-bold.text-warning .
+            h2 Tulos Draey Skirts
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            small.text-secondary.font-weight-bold (05 Reviews)
+            br
+            h3.text-danger $230.00
+            p
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusamus quis, inventore recusandae corrupti porro expedita rerum nobis repudiandae delectus esse voluptates tenetur perspiciatis voluptatibus officiis deserunt pariatur reiciendis minima!
+            h6
+              | COLOR: &nbsp;
+              i.fas.fa-circle.text-danger
+              i.fas.fa-circle.text-info
+              i.fas.fa-circle.text-success
+            h6
+              | SIZE: &nbsp;
+              span.badge.badge-light.rounded-0.border.px-3.py-2  S
+              span.badge.badge-light.rounded-0.border.px-3.py-2  M
+              span.badge.badge-light.rounded-0.border.px-3.py-2  L
+              span.badge.badge-light.rounded-0.border.px-3.py-2  XS
+            br
+            span.badge.badge-primary.rounded-0.border.px-lg-4.px-md-2.py-lg-2.py-md-1
+              h4 25
+              | Days
+            span.badge.badge-primary.rounded-0.border.px-lg-4.px-md-2.py-lg-2.py-md-1
+              h4 14
+              | Hours
+            span.badge.badge-primary.rounded-0.border.px-lg-4.px-md-2.py-lg-2.py-md-1
+              h4 57
+              | Mins
+            span.badge.badge-primary.rounded-0.border.px-lg-4.px-md-2.py-lg-2.py-md-1
+              h4 43
+              | Secs
+      section
+        h5.text-center(style='letter-spacing: 1px;')
+          br
+          u
+            b INSTAGRAM
+        hr
+        br
+        .row.mb-4
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/insta3.jpg')
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/insta3.jpg')
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/insta3.jpg')
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/insta3.jpg')
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/insta3.jpg')
+          .col-lg-2.col-md-3.col-sm-4.d-block
+            .card
+              img.card-img(src='static/images/insta3.jpg')
+      section#card-media
+        .row.mb-4
+          .col-lg-4.col-md-6.col-sm-6.d-block
+            .card.p-2
+              .card-title.font-weight-bold
+                | BEST SELLER
+                hr
+              .card-body
+                .media.bg-white.pb-3
+                  img.w-50(src='static/images/prod4.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+                .media.bg-white.pb-3
+                  img.w-50(src='static/images/prod5.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+                .media.bg-white
+                  img.w-50(src='static/images/prod6.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+          .col-lg-4.col-md-6.col-sm-6.d-block
+            .card.p-2
+              .card-title.font-weight-bold
+                | TOP RATE
+                hr
+              .card-body
+                .media.bg-white.pb-3
+                  img.w-50(src='static/images/prod4.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+                .media.bg-white.pb-3
+                  img.w-50(src='static/images/prod5.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+                .media.bg-white
+                  img.w-50(src='static/images/prod6.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+          .col-lg-4.col-md-6.col-sm-6.d-block
+            .card.p-2
+              .card-title.font-weight-bold
+                | BEST SELLER
+                hr
+              .card-body
+                .media.bg-white.pb-3
+                  img.w-50(src='static/images/prod4.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+                .media.bg-white.pb-3
+                  img.w-50(src='static/images/prod5.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+                .media.bg-white
+                  img.w-50(src='static/images/prod6.jpg')
+                  .media-body.text-left.pl-2
+                    h6 Tulos Draey Skirts
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    small.text-secondary.font-weight-bold
+                    br
+                    h6.text-danger $99.00
+                    span.badge.badge-info.rounded-0.border
+                      i.bi-cart
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-crop
+                    span.badge.badge-light.rounded-0.border
+                      i.bi-heart
+                    span.badge.badge-light.rounded-0.border
+                      i.fas.fa-eye
+      section#footer.py-5.text-white.text-center.ftr(style='background-image:url(static/images/footer.jpg);')
+        img.rounded.logo(src='static/images/face.jpg' style='height: 90px; width: 40')
+        p.p-3.text-danger
+          i.fas.fa-quote-left.align-top
+          |  &quot;I&apos;m Ridding The World Of Evil And Creating A Utopia. No Matter How Much Time I Have, It Won&apos;t Be Enough.
+          i.fas.fa-quote-right.align-top
+        h5.font-weight-bold.text-black BILLY GRAHAM
+        h6.text-black web designer
+        .btn-group-lg.py-4
+          button.btn.text-white.rounded-0(style='background-color: darkslateblue;')
+            i.bi-facebook
+            |  FACEBOOK
+          button.btn.text-white.rounded-0.bg-info
+            i.bi-instagram
+            |  INSTAGRAM
+          button.btn.text-white.rounded-0(style='background-color:purple;')
+            i.bi-twitter
+            |  TWITTER
+          button.btn.text-white.rounded-0(style='background-color:palevioletred;')
+            i.bi-x-circle
+            |  DRIBBBLE
+          button.btn.text-white.rounded-0.bg-danger(style='margin-right: 0px;')
+            i.bi-pin
+            |  PINTREST
+        h1.font-weight-bold BPK
+        p.font-weight-normal.text-black
+          | This world is rotten, and those who are making it rot deserve to die. Someone has to do it, so why not me? .
+        div(style='font-size: 30px;')
+          span.font-weight-bold.text-info . 
+          span.font-weight-bold.text-danger . 
+          span.font-weight-bold.text-warning .
+        img.ftrimg(src='static/images/visa.jpg')
+        img.ftrimg(src='static/images/mastercard.jpg')
+        img.ftrimg(src='static/images/paytm.jpg')
+        img.ftrimg(src='static/images/paypal.jpg')
+        img.ftrimg(src='static/images/razor.jpg')
+      .p-4.text-center
+        | Copyright &copy;2022 All Rights Reserved
+// JavaScript Bundle with Popper
+link(rel='stylesheet' href='web.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3' crossorigin='anonymous')

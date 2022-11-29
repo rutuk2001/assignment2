@@ -1,0 +1,55 @@
+html 
+  head 
+    title Gallery 
+  body 
+  include header.pug
+
+  h2 Gallary Images
+
+  h3 here are the some of the images
+    //- include bootstrap.html
+    //- include header.pug
+
+    //- -const array = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRns8xJWduAR8AO0WLWgQivUBpUXUxJMZ0XfaCXvbCUvc_XTB_ZH9g50Zpgdb8gxqek03o&usqp=CAU" ,"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg", "https://images.unsplash.com/photo-1669147528483-5b5b4493cbe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", "https://images.unsplash.com/photo-1669158424143-3be4e002b36d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80", "https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=365&q=80", "https://images.unsplash.com/photo-1669111958756-13b1d5be9110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", "https://images.unsplash.com/photo-1669172460021-cf270d946e56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"];
+
+
+    //- .container
+    //-     each i in array
+    //-         .row
+    //-             .col-sm-6
+    //-                 .card(style='width: 18rem;')
+    //-                 img.card-img-top(src=i alt='...')
+
+    //-             .col-sm-6
+    //-                 .card(style='width: 18rem;')
+    //-                 img.card-img-top(src=i alt='...')
+
+.container
+
+  each i in array
+    .row
+  .row
+    .col-lg-2.col-md-3.col-sm-4.d-block
+      .card
+        img.card-img(src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' alt='....')
+
+    .col-lg-2.col-md-3.col-sm-4.d-block
+      .card
+        img.card-img(src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg')
+
+    .col-lg-2.col-md-3.col-sm-4.d-block
+      .card
+        img.card-img(src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg')
+
+    .col-lg-2.col-md-3.col-sm-4.d-block
+      .card
+        img.card-img(src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg')
+
+    .col-lg-2.col-md-3.col-sm-4.d-block
+      .card
+        img.card-img(src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg')
+
+    .col-lg-2.col-md-3.col-sm-4.d-block
+      .card
+        img.card-img(src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg')
+
